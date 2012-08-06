@@ -158,6 +158,43 @@
         detailVC.item = [self.items objectAtIndex:indexPath.row];
         [self.itemsTableView deselectRowAtIndexPath:indexPath animated:YES];
     }
+    else if ([segue.identifier isEqualToString:@"AddViewSegue"]) {
+        AddViewController *addVC = (AddViewController *)[(UINavigationController *)segue.destinationViewController topViewController];
+        addVC.delegate = self;
+    }
+}
+
+-(void)addViewControllerDidCancel:(AddViewController *)addVC
+{
+    
+}
+
+-(void)addViewController:(AddViewController *)addVC didSaveItem:(Item *)newItem
+{
+    [self.items addObject:newItem];
+    [self.itemsTableView reloadData];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You added a new item." 
+                                                    message:@"Would you like to tweet about your new item?" 
+                                                   delegate:self 
+                                          cancelButtonTitle:@"No" 
+                                          otherButtonTitles:@"Yes", nil];
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    //if button is No
+    if (buttonIndex == 0) 
+    {
+    } 
+    else 
+    {
+        TWTweetComposeViewController *tweetSheet = [[TWTweetComposeViewController alloc] init];
+        [tweetSheet setInitialText:@"Hey, check out our new items!"];
+        [self presentModalViewController:tweetSheet animated:YES];
+
+    }
 }
 
 @end

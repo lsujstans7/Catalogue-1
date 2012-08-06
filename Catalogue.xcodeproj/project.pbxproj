@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0E925415D0575B00D306CD /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0E925315D0575B00D306CD /* Twitter.framework */; };
 		5B4796DA15D01DEF00F452EF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4796D915D01DEF00F452EF /* DetailViewController.m */; };
 		5B8264E015D02D22004F2A21 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8264DF15D02D22004F2A21 /* AddViewController.m */; };
 		7AD252FB15CC263A002E38DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD252FA15CC263A002E38DA /* UIKit.framework */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B0E925315D0575B00D306CD /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		5B4796D815D01DEF00F452EF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		5B4796D915D01DEF00F452EF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		5B8264DE15D02D22004F2A21 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B0E925415D0575B00D306CD /* Twitter.framework in Frameworks */,
 				7AD252FB15CC263A002E38DA /* UIKit.framework in Frameworks */,
 				7AD252FD15CC263A002E38DA /* Foundation.framework in Frameworks */,
 				7AD252FF15CC263A002E38DA /* CoreGraphics.framework in Frameworks */,
@@ -76,6 +79,7 @@
 		7AD252EB15CC263A002E38DA = {
 			isa = PBXGroup;
 			children = (
+				5B0E925315D0575B00D306CD /* Twitter.framework */,
 				7AD2530015CC263A002E38DA /* Catalogue */,
 				7AD252F915CC263A002E38DA /* Frameworks */,
 				7AD252F715CC263A002E38DA /* Products */,
