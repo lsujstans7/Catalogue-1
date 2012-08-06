@@ -10,6 +10,7 @@
 		5B0E925415D0575B00D306CD /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B0E925315D0575B00D306CD /* Twitter.framework */; };
 		5B4796DA15D01DEF00F452EF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4796D915D01DEF00F452EF /* DetailViewController.m */; };
 		5B8264E015D02D22004F2A21 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8264DF15D02D22004F2A21 /* AddViewController.m */; };
+		5BF30C7515D0619D0057B711 /* WebsiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF30C7415D0619D0057B711 /* WebsiteViewController.m */; };
 		7AD252FB15CC263A002E38DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD252FA15CC263A002E38DA /* UIKit.framework */; };
 		7AD252FD15CC263A002E38DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD252FC15CC263A002E38DA /* Foundation.framework */; };
 		7AD252FF15CC263A002E38DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD252FE15CC263A002E38DA /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 		5B4796D915D01DEF00F452EF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		5B8264DE15D02D22004F2A21 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		5B8264DF15D02D22004F2A21 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		5BF30C7315D0619D0057B711 /* WebsiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsiteViewController.h; sourceTree = "<group>"; };
+		5BF30C7415D0619D0057B711 /* WebsiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsiteViewController.m; sourceTree = "<group>"; };
 		7AD252F615CC263A002E38DA /* Catalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catalogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD252FA15CC263A002E38DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AD252FC15CC263A002E38DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +113,8 @@
 				7AD2530915CC263A002E38DA /* AppDelegate.h */,
 				7AD2530A15CC263A002E38DA /* AppDelegate.m */,
 				7AD2530C15CC263A002E38DA /* MainStoryboard.storyboard */,
+				5BF30C7315D0619D0057B711 /* WebsiteViewController.h */,
+				5BF30C7415D0619D0057B711 /* WebsiteViewController.m */,
 				5B8264DE15D02D22004F2A21 /* AddViewController.h */,
 				5B8264DF15D02D22004F2A21 /* AddViewController.m */,
 				5B4796D815D01DEF00F452EF /* DetailViewController.h */,
@@ -220,6 +225,7 @@
 				7AD2532E15CC5C8B002E38DA /* ItemCell.m in Sources */,
 				5B4796DA15D01DEF00F452EF /* DetailViewController.m in Sources */,
 				5B8264E015D02D22004F2A21 /* AddViewController.m in Sources */,
+				5BF30C7515D0619D0057B711 /* WebsiteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
