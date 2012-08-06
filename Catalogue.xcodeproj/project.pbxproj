@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B4796DA15D01DEF00F452EF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4796D915D01DEF00F452EF /* DetailViewController.m */; };
 		7AD252FB15CC263A002E38DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD252FA15CC263A002E38DA /* UIKit.framework */; };
 		7AD252FD15CC263A002E38DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD252FC15CC263A002E38DA /* Foundation.framework */; };
 		7AD252FF15CC263A002E38DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AD252FE15CC263A002E38DA /* CoreGraphics.framework */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B4796D815D01DEF00F452EF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5B4796D915D01DEF00F452EF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		7AD252F615CC263A002E38DA /* Catalogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catalogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD252FA15CC263A002E38DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AD252FC15CC263A002E38DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +103,8 @@
 				7AD2530915CC263A002E38DA /* AppDelegate.h */,
 				7AD2530A15CC263A002E38DA /* AppDelegate.m */,
 				7AD2530C15CC263A002E38DA /* MainStoryboard.storyboard */,
+				5B4796D815D01DEF00F452EF /* DetailViewController.h */,
+				5B4796D915D01DEF00F452EF /* DetailViewController.m */,
 				7AD2530F15CC263A002E38DA /* ViewController.h */,
 				7AD2531015CC263A002E38DA /* ViewController.m */,
 				7AD2532C15CC5C8B002E38DA /* ItemCell.h */,
@@ -204,6 +209,7 @@
 				7AD2531C15CC267A002E38DA /* Book.m in Sources */,
 				7AD2531F15CC2686002E38DA /* CD.m in Sources */,
 				7AD2532E15CC5C8B002E38DA /* ItemCell.m in Sources */,
+				5B4796DA15D01DEF00F452EF /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

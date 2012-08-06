@@ -10,6 +10,7 @@
 #import "Book.h"
 #import "CD.h"
 #import "ItemCell.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -125,7 +126,8 @@
     // Next we need to test if the Item is a Book or a CD to set the labels appropriately
     
     // If the Item is a Book we will use the Book's properties for the label
-    if ([instance isMemberOfClass:[Book class]]) {
+    if ([instance isMemberOfClass:[Book class]]) 
+    {
         Book *book = (Book *) instance;
         cell.mainLabel.text = book.title;
         cell.smallLabel.text = book.author;
@@ -134,7 +136,8 @@
         cell.itemImage.image = [UIImage imageNamed:@"book.png"];
     }
     // If the Item is a CD we will use the CD properties for the label
-    else if ([instance isMemberOfClass:[CD class]]) {
+    else if ([instance isMemberOfClass:[CD class]]) 
+    {
         CD *cd = (CD *) instance;
         cell.mainLabel.text = cd.label;
         cell.smallLabel.text = cd.artist;
@@ -145,6 +148,16 @@
     
     // Return the customized cell
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"DetailViewSegue"]) {
+        DetailViewController *detailVC = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.itemsTableView indexPathForSelectedRow];
+        detailVC.item = [self.items objectAtIndex:indexPath.row];
+        [self.itemsTableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
 
 @end
